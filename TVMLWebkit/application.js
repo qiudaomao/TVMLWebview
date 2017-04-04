@@ -35,10 +35,7 @@ App.onLaunch = function(options) {
         <alertTemplate>
             <title>测试浏览器</title>
             <button index="0">
-                <text>打开浏览器</text>
-            </button>
-            <button index="1">
-                <text>打开一个View</text>
+                <text>打开hack浏览器</text>
             </button>
         </alertTemplate>
     </document>`;
@@ -46,13 +43,9 @@ App.onLaunch = function(options) {
     doc.addEventListener("select", (event)=>{
                          let index = event.target.getAttribute("index");
                          if (index==0) {
-                             console.log("will show browser");
-                             JSB.log("will show browser from native code");
-                             JSB.showBrowser();
-                         } else {
-                             console.log("will normal browser");
+                             console.log("will hack browser");
                              JSB.log("will show normal view from native code");
-                             JSB.showNormalView("haha")
+                             JSB.showBrowser();
                          }
                          })
     navigationDocument.pushDocument(doc);
