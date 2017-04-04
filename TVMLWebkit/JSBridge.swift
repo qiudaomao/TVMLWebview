@@ -9,6 +9,7 @@ import TVMLKit
 import Foundation
 @objc protocol JBExports: JSExport {
     static func showBrowser() -> Void
+    static func showNormalView() -> Void
     static func log(_ str: String) -> Void
 }
 
@@ -24,5 +25,15 @@ import Foundation
     }
     static func log(_ str: String) -> Void {
         print("jslog: \(str)")
+    }
+    static func showNormalView() -> Void {
+        let appd = UIApplication.shared.delegate as! AppDelegate
+        let controller = appd.appController
+        let toast = ToastViewController()
+        controller?.navigationController.present(toast, animated: false, completion: {
+            //...
+            print("show toast")
+            toast.showToast(text: "abc")
+        })
     }
 }

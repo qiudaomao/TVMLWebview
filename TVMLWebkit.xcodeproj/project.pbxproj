@@ -12,6 +12,7 @@
 		E97EDF361E93360B006F7A58 /* application.js in Resources */ = {isa = PBXBuildFile; fileRef = E97EDF351E93360B006F7A58 /* application.js */; };
 		E97EDF381E9339A5006F7A58 /* JSBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97EDF371E9339A5006F7A58 /* JSBridge.swift */; };
 		E97EDF3C1E933B5E006F7A58 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E97EDF3B1E933B5E006F7A58 /* WebViewController.m */; };
+		E97EDF3E1E933F82006F7A58 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97EDF3D1E933F82006F7A58 /* Toast.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		E97EDF391E933B5E006F7A58 /* TVMLWebkit-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TVMLWebkit-Bridging-Header.h"; sourceTree = "<group>"; };
 		E97EDF3A1E933B5E006F7A58 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
 		E97EDF3B1E933B5E006F7A58 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		E97EDF3D1E933F82006F7A58 /* Toast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				E97EDF351E93360B006F7A58 /* application.js */,
 				E97EDF371E9339A5006F7A58 /* JSBridge.swift */,
 				E97EDF391E933B5E006F7A58 /* TVMLWebkit-Bridging-Header.h */,
+				E97EDF3D1E933F82006F7A58 /* Toast.swift */,
 				E97EDF2D1E9334B1006F7A58 /* Assets.xcassets */,
 				E97EDF2F1E9334B1006F7A58 /* Info.plist */,
 			);
@@ -141,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E97EDF2A1E9334B1006F7A58 /* AppDelegate.swift in Sources */,
+				E97EDF3E1E933F82006F7A58 /* Toast.swift in Sources */,
 				E97EDF381E9339A5006F7A58 /* JSBridge.swift in Sources */,
 				E97EDF3C1E933B5E006F7A58 /* WebViewController.m in Sources */,
 			);

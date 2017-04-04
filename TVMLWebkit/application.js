@@ -34,16 +34,26 @@ App.onLaunch = function(options) {
     <document>
         <alertTemplate>
             <title>测试浏览器</title>
-            <button>
+            <button index="0">
                 <text>打开浏览器</text>
+            </button>
+            <button index="1">
+                <text>打开一个View</text>
             </button>
         </alertTemplate>
     </document>`;
     let doc = (new DOMParser()).parseFromString(text, "application/xml");
     doc.addEventListener("select", (event)=>{
-                         console.log("will show browser");
-                         JSB.log("will show browser from native code");
-                         JSB.showBrowser();
+                         let index = event.target.getAttribute("index");
+                         if (index==0) {
+                             console.log("will show browser");
+                             JSB.log("will show browser from native code");
+                             JSB.showBrowser();
+                         } else {
+                             console.log("will normal browser");
+                             JSB.log("will show normal view from native code");
+                             JSB.showNormalView("haha")
+                         }
                          })
     navigationDocument.pushDocument(doc);
 }
